@@ -4,7 +4,7 @@
 
 Integrantes:
 - Deisy Murcia
-- Jhoan Ávila
+- Jhooan Ávila
 - Rumi Torres 
 - Nubia Guzmán
 
