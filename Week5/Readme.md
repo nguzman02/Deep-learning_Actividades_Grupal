@@ -25,7 +25,7 @@ Modificaciones en metricas:
 <img width="741" height="549" alt="image" src="https://github.com/user-attachments/assets/b235a18b-a158-4e0d-8912-5cf8d12c45f4" />
 
 **Conclusiones**
-
+La función en donde se evidencia mayor acercabilidad a la presición de prendizaje es la de keras.metrics.Precision debido a que el valor de inicio para la etapa de entrenamiento inicia 0.84 y la de de validación 0.91 en cambio 
 
 **Resultado principal**
 
