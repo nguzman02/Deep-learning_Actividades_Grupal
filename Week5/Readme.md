@@ -29,5 +29,5 @@ La función en donde se evidencia mayor acercabilidad a la presición de prendiz
 
 **Resultado principal**
 Según los resultados anteriores se puede evidenciar que una de las funciones mas efectivas para el error
-
+y para las metricas es bueno trabajar con la presición debido a que permite evaluar un mejor desempeño del modelo
 **Pasos para ejecutar el notebook**
