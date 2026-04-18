@@ -12,7 +12,7 @@ Modificaciones en loss:
 2. loss="mean_squared_error"
 <img width="725" height="539" alt="image" src="https://github.com/user-attachments/assets/a76cc44f-9c31-4afd-bb7a-ae2e38ac1429" />
 **Conclusiones**
-Se puede evidenciar que en la función de error la mas efectiva es la mean_squared_error debido a que inicia con una tasa de error menor a 0.2 en la etap de entrenamineto y en la de validación con un valor de  menor a 0.127 en cambio de la otra función inicia con una tasa de error de 0.7 para la etapa de entrenamiento y un 0.58 para la etapa de validación.
+Se puede evidenciar que en la función de error la mas efectiva es la mean_squared_error debido a que inicia con una tasa de error menor a 0.2 en la etapa de entrenamiento y en la de validación con un valor de  menor a 0.127 en cambio de la otra función inicia con una tasa de error de 0.7 para la etapa de entrenamiento y un 0.58 para la etapa de validación.
 
 Modificaciones en metricas:
 1. metrics=["accuracy"]
@@ -28,6 +28,5 @@ Modificaciones en metricas:
 La función en donde se evidencia mayor acercabilidad a la presición de prendizaje es la de keras.metrics.Precision debido a que el valor de inicio para la etapa de entrenamiento inicia 0.84 y la de de validación 0.91 en cambio las otras funciones tienen un rango de 0.4 hasta el 0.81 tasa de aprendizaje.
 
 **Resultado principal**
-Según los resultados anteriores se puede evidenciar que una de las funciones mas efectivas para el error
-y para las metricas es bueno trabajar con la presición debido a que permite evaluar un mejor desempeño del modelo
+Según los resultados anteriores se puede evidenciar que una de las funciones mas efectivas para el error mean_squared_error y para las metricas keras.metrics.Precision es bueno trabajar con la presición debido a que permite evaluar un mejor desempeño del modelo y disminuye el indice de error y es mas efectivo la tasa de aprendizaje.
 **Pasos para ejecutar el notebook**
