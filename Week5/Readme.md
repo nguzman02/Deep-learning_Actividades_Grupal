@@ -28,6 +28,10 @@ Modificaciones en metricas:
 La función en donde se evidencia mayor acercabilidad a la presición de prendizaje es la de keras.metrics.Precision debido a que el valor de inicio para la etapa de entrenamiento inicia 0.84 y la de de validación 0.91 en cambio las otras funciones tienen un rango de 0.4 hasta el 0.81 tasa de aprendizaje.
 
 **Resultado principal**
-Según los resultados anteriores se puede evidenciar que una de las funciones mas efectivas para el error mean_squared_error y para las metricas keras.metrics.Precision es bueno utilizarlos debido a que permite evaluar un mejor desempeño del modelo y disminuye el indice de error y es mas efectivo la tasa de aprendizaje.
+Según los resultados anteriores se puede evidenciar que una de las funciones mas efectivas para el error mean_squared_error y para las metricas keras.metrics.Precision es bueno utilizarlos debido a que permite evaluar un mejor desempeño del modelo y disminuye el indice la tasa de error y es mas efectivo la tasa de aprendizaje.
 
 **Pasos para ejecutar el notebook**
+1. Descargar el archivo .ipynb en Github.
+2. Abre una pagina de google colab.
+3. seleeciona al opción de archivos, enseguida la opción  de subir un nuevo cuaderno, posteriormente cic en subir selecciona el arcivo y deja que cargue.
+4. selecciona la opcion ejecutar todas espera que cargue.
