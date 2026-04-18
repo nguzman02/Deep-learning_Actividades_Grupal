@@ -12,7 +12,7 @@ Modificaciones en loss:
 2. loss="mean_squared_error"
 <img width="725" height="539" alt="image" src="https://github.com/user-attachments/assets/a76cc44f-9c31-4afd-bb7a-ae2e38ac1429" />
 **Conclusiones**
-Se puede evidenciar que en la función de error la mas efectiva es la mean_squared_error debido a que inicia con una tasa de error menor a 0.2 en cambio de la otra función inicia con una tasa de error de 0.7.
+Se puede evidenciar que en la función de error la mas efectiva es la mean_squared_error debido a que inicia con una tasa de error menor a 0.2 en la etap de entrenamineto y en la de validación con un valor de  menor a 0.127 en cambio de la otra función inicia con una tasa de error de 0.7 para la etapa de entrenamiento y un 0.58 para la etapa de validación.
 
 Modificaciones en metricas:
 1. metrics=["accuracy"]
@@ -21,7 +21,6 @@ Modificaciones en metricas:
 <img width="818" height="543" alt="image" src="https://github.com/user-attachments/assets/ffe77f83-6c2f-465f-a5fc-462b0f52fc72" />
 3.metrics=["accuracy",keras.metrics.Recall()]
    <img width="392" height="308" alt="image" src="https://github.com/user-attachments/assets/bb563f8d-c162-461e-84de-e9c1af7d9bb9" />
-
 4.metrics=["accuracy",keras.metrics.Precision(), keras.metrics.Recall()])
 <img width="741" height="549" alt="image" src="https://github.com/user-attachments/assets/b235a18b-a158-4e0d-8912-5cf8d12c45f4" />
 
