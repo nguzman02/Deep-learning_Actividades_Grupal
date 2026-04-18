@@ -12,6 +12,7 @@ Modificaciones en loss:
 2. loss="mean_squared_error"
 <img width="725" height="539" alt="image" src="https://github.com/user-attachments/assets/a76cc44f-9c31-4afd-bb7a-ae2e38ac1429" />
 **Conclusiones**
+Se puede evidenciar que en la función de error la mas efectiva es la mean_squared_error debido a que inicia con una tasa de error menor a 
 
 Modificaciones en metricas:
 1. metrics=["accuracy"]
@@ -25,6 +26,7 @@ Modificaciones en metricas:
 <img width="741" height="549" alt="image" src="https://github.com/user-attachments/assets/b235a18b-a158-4e0d-8912-5cf8d12c45f4" />
 
 **Conclusiones**
+
 
 **Resultado principal**
 
