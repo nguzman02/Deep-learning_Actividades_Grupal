@@ -6,10 +6,10 @@ Evidenciar el comportamiento que se tiene en cuenta al cambiar los hiperparámet
 
 **Comparaciones**
 Modificaciones en loss:
-1. loss="binary_crossentropy", metrics=["accuracy"])
+1. loss="binary_crossentropy"
 <img width="776" height="547" alt="image" src="https://github.com/user-attachments/assets/64180c06-a440-44d5-8ba2-60861fa75634" />
 
-2. loss="mean_squared_error", metrics=["accuracy"]
+2. loss="mean_squared_error"
 <img width="725" height="539" alt="image" src="https://github.com/user-attachments/assets/a76cc44f-9c31-4afd-bb7a-ae2e38ac1429" />
 **Conclusiones**
 
