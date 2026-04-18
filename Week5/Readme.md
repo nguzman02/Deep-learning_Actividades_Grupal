@@ -1,14 +1,15 @@
 **Semana 5: -Cambio de hiperparámetros**
+
+
 **Objetivo**
 Evidenciar el comportamiento que se tiene en cuenta al cambiar los hiperparámetros en las tecnicas de optimización en las redes neuronales.
+
 **Comparaciones**
 Modificaciones en loss:
 1. loss="binary_crossentropy", metrics=["accuracy"])
-
 <img width="776" height="547" alt="image" src="https://github.com/user-attachments/assets/64180c06-a440-44d5-8ba2-60861fa75634" />
 
 2. loss="mean_squared_error", metrics=["accuracy"]
-<img width="724" height="533" alt="image" src="https://github.com/user-attachments/assets/5897835d-a4d7-4835-924c-f28dd31e3b64" />
 <img width="725" height="539" alt="image" src="https://github.com/user-attachments/assets/a76cc44f-9c31-4afd-bb7a-ae2e38ac1429" />
 **Conclusiones**
 
