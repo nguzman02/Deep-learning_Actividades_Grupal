@@ -32,6 +32,6 @@ Según los resultados anteriores se puede evidenciar que una de las funciones ma
 
 **Pasos para ejecutar el notebook**
 1. Descargar el archivo .ipynb en Github.
-2. Abre una pagina de google colab.
+2. Abrir [Google Colab](https://colab.research.google.com)
 3. seleeciona al opción de archivos, enseguida la opción  de subir un nuevo cuaderno, posteriormente cic en subir selecciona el arcivo y deja que cargue.
 4. selecciona la opcion ejecutar todas espera que cargue.
