@@ -31,8 +31,8 @@ Se mantuvo el mismo kernel (**Sobel horizontal**) en todas las pruebas, cambiand
 ## Estructura del repositorio
 
 ```
-week7/
-├── week7_convolucion_padding_stride_CM_contactcenter.ipynb
+Week7/
+├── week7_Actividad7.ipynb
 └── README.md
 ```
 
