@@ -23,12 +23,22 @@ Modificaciones en metricas:
    <img width="392" height="308" alt="image" src="https://github.com/user-attachments/assets/bb563f8d-c162-461e-84de-e9c1af7d9bb9" />
 4.metrics=["accuracy",keras.metrics.Precision(), keras.metrics.Recall()])
 <img width="741" height="549" alt="image" src="https://github.com/user-attachments/assets/b235a18b-a158-4e0d-8912-5cf8d12c45f4" />
-
+---
 **Conclusiones**
 La función en donde se evidencia mayor acercabilidad a la presición de prendizaje es la de keras.metrics.Precision debido a que el valor de inicio para la etapa de entrenamiento inicia 0.84 y la de de validación 0.91 en cambio las otras funciones tienen un rango de 0.4 hasta el 0.81 tasa de aprendizaje.
 
+---
 **Resultado principal**
 Según los resultados anteriores se puede evidenciar que una de las funciones mas efectivas para el error mean_squared_error y para las metricas keras.metrics.Precision es bueno utilizarlos debido a que permite evaluar un mejor desempeño del modelo y disminuye el indice la tasa de error y es mas efectivo la tasa de aprendizaje.
+
+---
+## Estructura del repositorio
+
+```
+Week7/
+├── week7_Actividad7.ipynb
+└── README.md
+```
 
 **Pasos para ejecutar el notebook**
 1. Descargar el archivo .ipynb en Github.
