@@ -25,7 +25,15 @@ De acuerdo a esto y realizando un analisis de comparación se puede concluir que
 - El **uso de regularización Early Stopping** no toca los pesos ni apaga neuronas. Permite el proceso de aprendizaje fluya pero observando, cuando se detecta el Overfitting está a punto de comenzar se detiene el proceso de entreno. Esto evita el sesgo comience a convertirse en varianza y que se restaure los pesos de la mejor época pasada. Su mayor ventaja, además de evitar el sobreajuste, es el enorme ahorro de tiempo y recursos computacionales.
 
 ***Nota:** Para ajustar a gusto el valor de λ en el codigo verifique la variable "lambda_L2". Y para ajustar el valor de apagado verifique la variable "dropout_rate".*
+## Estructura del repositorio
 
+```
+Week6/
+├── week6_Actividad6.ipynb
+└── README.md
+```
+
+---
 
 # Cómo ejecutar el notebook
 1. Abrir [Google Colab](https://colab.research.google.com)
