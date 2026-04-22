@@ -34,7 +34,7 @@ Basado en el entrenamiento de 6 épocas con el dataset CIFAR-10:
 *   **Convolución (Conv):** Es el proceso donde los filtros recorren la imagen detectando rasgos como bordes y texturas. Al incrementar de 32 a 64 filtros, la red logra combinar rasgos simples para entender conceptos visuales más complejos.
 *   **Padding ('same'):** Técnica que añade bordes para mantener el tamaño original de la imagen (32x32). Esto es crucial para no perder información en los bordes y esquinas de la imagen.
 *   **Stride (Zancada):** Se mantuvo en 1. Un salto pequeño garantiza un análisis exhaustivo de cada píxel, algo vital en imágenes pequeñas de 32x32 como las de CIFAR-10.
-*   **Hallazgo:** La comparación evidencia que usar un modelo preentrenado (MobileNetV2) es mucho más eficiente. Al contar con 'conocimiento previo' de ImageNet, el modelo logra una convergencia más estable y una precisión superior en menos tiempo que la CNN básica. Como evidencia, la CNN Base necesitó 6 épocas para llegar apenas al 66% de precisión, mientras que el Transfer Learning superó el 75% desde la primera época. Esto refuerza el argumento de que 'no hay que reinventar la rueda.
+*   **Hallazgo:** La comparación evidencia que usar un modelo preentrenado (MobileNetV2) es mucho más eficiente. Al contar con 'conocimiento previo' de ImageNet, el modelo logra una convergencia más estable y una precisión superior en menos tiempo que la CNN básica. Como evidencia, la CNN Base necesitó 6 épocas para llegar apenas al 66% de precisión, mientras que el Transfer Learning superó el 75% desde la primera época. 
  
 ##  Cómo ejecutar
 1.  Descarga el archivo .ipynb de este repositorio.
