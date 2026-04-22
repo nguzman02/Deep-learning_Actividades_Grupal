@@ -22,7 +22,7 @@ Basado en el entrenamiento de 6 épocas con el dataset CIFAR-10:
 *   **CNN Base:** Mostró una mejora constante pero lenta, alcanzando aproximadamente un **66% de precisión** en validación.
 *   **Modelo Transfer Learning:** Logró una convergencia mucho más estable y veloz, superando el **75% de precisión** desde la primera época y finalizando cerca del **80%**.
 
-  <img width="1113" height="770" alt="image" src="https://github.com/user-attachments/assets/dc4c1916-8382-4098-9bbd-c3863673ec54" />
+ <img width="1133" height="812" alt="image" src="https://github.com/user-attachments/assets/7e931651-1252-4766-a8a8-cf96b685118c" />
 
 
 ##  Conclusiones Técnicas
