@@ -12,13 +12,13 @@ Implementación de un modelo de CNN, carga y preprocesamiento de datos, definici
 ## Implementación Técnica
 
 ### 1. CNN desde cero (Arquitectura Base)
-*   **Capas:** Dos bloques de Conv2D (32 y 64 filtros) seguidos de `MaxPooling2D`.
+*   **Capas:** Dos bloques de Conv2D (32 y 64 filtros) seguidos de MaxPooling2D.
 *   **Propósito:** Comprender la extracción jerárquica de patrones (bordes, texturas y formas).
 
 ### 2. Transfer Learning (MobileNetV2)
 *   **Modelo Base:** MobileNetV2 preentrenado con ImageNet.
 *   **Adaptación:** Uso de UpSampling2D para redimensionar las imágenes de 32x32 a 96x96 píxeles.
-*   **Regularización:** Inclusión de una capa `Dropout(0.3)` para mitigar el sobreajuste.
+*   **Regularización:** Inclusión de una capa Dropout(0.3) para mitigar el sobreajuste.
 
 ## Resultados Principales
 Basado en el entrenamiento de 6 épocas con el dataset CIFAR-10:
