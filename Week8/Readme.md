@@ -6,7 +6,7 @@ Este proyecto presenta una comparativa entre dos estrategias de Deep Learning pa
 Implementación de un modelo de CNN, carga y preprocesamiento de datos, definición de arquitectura, entrenamiento y evaluación de métricas. Se busca demostrar la eficiencia de reutilizar modelos preentrenados frente a arquitecturas diseñadas desde cero.
 
 # Dataset
-*  Dataset: CIFAR-10 (60,000 imágenes a color).
+*  Dataset: CIFAR-10,  Compuesto por 60,000 imágenes a color distribuidas en 10 clases de objetos (32x32 píxeles).
 *  Resolución: 32x32 píxeles.
 *  Justificación: Se utilizó por su eficiencia computacional. Dada su baja resolución, se implementó UpSampling para redimensionar las imágenes a 96x96, permitiendo una mejor extracción de características con el modelo MobileNetV2.
 ## Implementación Técnica
