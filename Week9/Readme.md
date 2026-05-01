@@ -1,6 +1,6 @@
 # Actividad 9: Implementación de Data Augmentation y Transfer Learning en Imágenes
 
-Este proyecto presenta una comparativa avanzada entre dos estrategias fundamentales para optimizar modelos de Deep Learning: el Aumento de Datos (Data Augmentation) para mejorar la robustez y el Aprendizaje por Transferencia (Transfer Learning) para maximizar la eficiencia
+Este proyecto presenta dos estrategias fundamentales para optimizar modelos de Deep Learning: el Aumento de Datos (Data Augmentation) para mejorar la robustez y el Aprendizaje por Transferencia (Transfer Learning) para maximizar la eficiencia
 
 ## Objetivo
 Implementar técnicas para mejorar el desempeño y la generalización de modelos:
