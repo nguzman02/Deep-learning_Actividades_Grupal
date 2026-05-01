@@ -1,11 +1,12 @@
 # Deep-learning_Actividades_Grupal
 
-Integrantes:
+#
+**Integrantes:** 
 
-Deisy Murcia
-Juan Ávila
-Rumi Torres
-Nubia Guzmán
+- Deisy Murcia
+- Juan Ávila
+- Rumi Torres
+- Nubia Guzmán
 
 #
 # Actividades de la semana 5 a la semana 8 
