@@ -1,13 +1,14 @@
-#Actividad 12 – Mecanismos de Atención y Transformer en Datos Secuenciales
-1. Descripción de la actividad
+# Semana 12 – Actividad 12: Implementación del Mecanismo de Atención para Series de Tiempo y un Transformer Básico en Google Colab 
+----
+# 1. Descripción de la actividad
 En esta actividad se implementa un mecanismo de atención y una arquitectura tipo Transformer simplificada, aplicadas al análisis de datos secuenciales (series temporales).
 El propósito es comprender cómo los mecanismos de atención permiten al modelo asignar diferentes niveles de importancia a los elementos de una secuencia, superando las limitaciones de las redes recurrentes tradicionales en el manejo de dependencias de largo plazo.
 La actividad se desarrolla en Google Colab y se presenta como evidencia reproducible en GitHub.
-
-2. Objetivo de la actividad
+----
+# 2. Objetivo de la actividad
 Implementar y evaluar modelos basados en atención y Transformer para datos secuenciales, comparando su desempeño con un modelo recurrente tradicional.
 
-3. Dataset utilizado
+# 3. Dataset utilizado
 Se utiliza el dataset Jena Climate, correspondiente a una serie temporal multivariante de mediciones meteorológicas reales.
 
 Tipo de problema: Regresión
