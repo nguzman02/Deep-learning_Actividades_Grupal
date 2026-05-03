@@ -17,7 +17,7 @@ Conjunto de datos secuencial, continuo y de largo plazo
 
 El dataset se descarga automáticamente desde una fuente pública, garantizando reproducibilidad.
 
-4. Preparación de los datos
+# 4. Preparación de los datos
 El procesamiento de datos incluye:
 
 Conversión y ordenamiento temporal de la variable de fecha.
@@ -27,11 +27,10 @@ Construcción de ventanas temporales (sliding windows):
 Ventanas de entrada con múltiples pasos temporales.
 Predicción de un valor futuro de la variable objetivo.
 
-
-
 Este enfoque permite transformar la serie temporal en un problema supervisado.
 
-5. Modelos implementados
+# 5. Modelos implementados
+---
 5.1 Modelo base – LSTM
 Se implementa un modelo LSTM como referencia, utilizando únicamente el estado oculto final de la secuencia para realizar la predicción.
 Este modelo sirve como baseline para evaluar el impacto del uso de atención y arquitectura Transformer.
@@ -55,7 +54,7 @@ Agregación temporal mediante pooling.
 
 El Transformer permite modelar relaciones entre todos los pasos temporales sin procesamiento secuencial.
 
-6. Entrenamiento y evaluación
+# 6. Entrenamiento y evaluación
 Todos los modelos se entrenan bajo el mismo esquema de datos y se evalúan sobre un conjunto de prueba independiente.
 Métricas utilizadas:
 
@@ -64,7 +63,7 @@ RMSE (Root Mean Squared Error)
 
 Estas métricas permiten una comparación objetiva del desempeño predictivo.
 
-7. Interpretación del mecanismo de atención
+# 7. Interpretación del mecanismo de atención
 Para el modelo LSTM con atención se extraen y visualizan los pesos de atención asociados a cada paso temporal.
 Esto permite:
 
@@ -73,7 +72,7 @@ Analizar la contribución de dependencias recientes y lejanas.
 Aportar explicabilidad al modelo.
 
 
-8. Análisis de dependencias de corto y largo plazo
+# 8. Análisis de dependencias de corto y largo plazo
 Se evalúa el comportamiento del modelo Transformer utilizando diferentes longitudes de ventana temporal.
 Este análisis permite observar:
 
@@ -82,9 +81,8 @@ La capacidad de capturar patrones de largo plazo.
 La diferencia conceptual frente a redes recurrentes tradicionales.
 
 
-9. Conclusiones
-
-
+# 9. Conclusiones
+----
 El uso de mecanismos de atención mejora el desempeño conceptual del modelo al permitir que la red identifique explícitamente los pasos temporales más relevantes de una secuencia.
 
 
@@ -99,6 +97,7 @@ Los pesos de atención aportan interpretabilidad al modelo, permitiendo comprend
 
 Aunque los modelos basados en atención y Transformer presentan mayor complejidad computacional, ofrecen ventajas claras en escenarios con secuencias largas y patrones temporales complejos.
 
+----
 
 
 10. Evidencia
