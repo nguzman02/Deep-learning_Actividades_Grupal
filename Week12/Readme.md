@@ -98,9 +98,14 @@ Los pesos de atención aportan interpretabilidad al modelo, permitiendo comprend
 Aunque los modelos basados en atención y Transformer presentan mayor complejidad computacional, ofrecen ventajas claras en escenarios con secuencias largas y patrones temporales complejos.
 
 ----
+# 10 Estructura del repositorio
+# Week6/
+├── week6_Actividad6.ipynb
+└── README.md
+
+Cómo ejecutar el notebook
+1. Abrir Google Colab
+2. Ejecutar las celdas en orden -> Entorno de Ejecución --> Ejecutar todas
+3. Las gráficas de comparación y la matriz de confusión se generarán automáticamente al final.
 
 
-10. Evidencia
-La implementación completa se encuentra en el notebook:
-Actividad_12_Atencion_Transformer_TimeSeries.ipynb
-Ejecutable en Google Colab y versionado en GitHub.
