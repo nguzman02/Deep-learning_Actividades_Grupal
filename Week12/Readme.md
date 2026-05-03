@@ -86,22 +86,18 @@ La diferencia conceptual frente a redes recurrentes tradicionales.
 ----
 El uso de mecanismos de atención mejora el desempeño conceptual del modelo al permitir que la red identifique explícitamente los pasos temporales más relevantes de una secuencia.
 
-
 El modelo LSTM con atención supera las limitaciones del LSTM tradicional al no depender exclusivamente del estado oculto final, reduciendo la pérdida de información histórica.
-
 
 La arquitectura Transformer demuestra una mayor capacidad para modelar dependencias de largo plazo, gracias al uso de auto-atención, lo que resulta especialmente útil en series temporales extensas.
 
-
 Los pesos de atención aportan interpretabilidad al modelo, permitiendo comprender y justificar el proceso de predicción.
-
 
 Aunque los modelos basados en atención y Transformer presentan mayor complejidad computacional, ofrecen ventajas claras en escenarios con secuencias largas y patrones temporales complejos.
 
 ----
 # 10 Estructura del repositorio
-# Week6/
-├── week6_Actividad6.ipynb
+# Week12/
+├── week12_Actividad12.ipynb
 └── README.md
 
 Cómo ejecutar el notebook
