@@ -29,12 +29,13 @@ Se importa la métrica de evaluación mean squared error (MSE) desde sklearn.met
 3.6 Análisis del comportamiento del modelo frente a la serie de tiempo
 <img width="1058" height="583" alt="image" src="https://github.com/user-attachments/assets/e79c03fb-1b94-4405-befe-d2389e24634f" />
 Teniendo en cuenta lo anterior se puede mostrar que logra capturar adecuadamente la tendencia general de la serie, lo que indica que ha aprendido los patrones principales presentes en los datos. Sin embargo, su desempeño puede verse afectado en presencia de cambios bruscos, donde las predicciones tienden a desviarse de los valores reales. Esto se debe a que, aunque las redes LSTM están diseñadas para retener información relevante del pasado y aprovechar las dependencias temporales, pueden tener dificultades para adaptarse rápidamente a variaciones repentinas no recurrentes. Aun así, su capacidad de memoria las convierte en una herramienta efectiva para modelar comportamientos secuenciales y realizar predicciones en series de tiempo.
-3.7 Conclusiones
+
+4. Conclusiones
 
 las redes neuronales recurrentes, especialmente los modelos LSTM, se destacan como una herramienta poderosa para el análisis de datos secuenciales, ya que permiten capturar y modelar dependencias temporales de manera eficiente. Su capacidad para identificar patrones complejos las posiciona por encima de muchos modelos tradicionales en tareas de predicción. No obstante, su desempeño depende en gran medida de un ajuste adecuado de los hiperparámetros, lo que requiere un proceso cuidadoso de configuración y validación para obtener resultados óptimos.
 
 
-10 Estructura del repositorio
+5 Estructura del repositorio
 Week11/
 ├── semana11.ipynb └── README.md
 
