@@ -42,5 +42,5 @@ Week11/
 Cómo ejecutar el notebook
 1. Descargar el archivo .ipynb en Github.
 2. Abrir Google Colab
-3. seleeciona al opción de archivos, enseguida la opción de subir un nuevo cuaderno, posteriormente clic en subir selecciona el arcivo y deja que cargue.
+3. selecciona al opción de archivos, enseguida la opción de subir un nuevo cuaderno, posteriormente clic en subir selecciona el arcivo y deja que cargue.
 4. selecciona la opcion ejecutar todas espera que cargue.
