@@ -11,7 +11,7 @@ Implementar técnicas para mejorar el desempeño y la generalización de modelos
 # Dataset
 *  Dataset: CIFAR-10,  Compuesto por 60,000 imágenes a color distribuidas en 10 clases de objetos (32x32 píxeles).
 *  Resolución: 32x32 píxeles.
-*  Preprocesamiento: Normalización inicial al rango [0, 1] y validación cruzada mediante una división estricta de entrenamiento (50k) y prueba (10k).
+*  Preprocesamiento: Normalización inicial al rango [0, 1] y validación cruzada mediante una división  de entrenamiento (50k) y prueba (10k).
 
   
 ## Implementación Técnica
