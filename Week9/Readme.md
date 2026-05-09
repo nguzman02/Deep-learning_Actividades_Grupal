@@ -1,56 +1,43 @@
-# Actividad 9: Implementación de Data Augmentation y Transfer Learning en Imágenes
-
+Actividad 9: Implementación de Data Augmentation y Transfer Learning en Imágenes
 Este proyecto presenta dos estrategias fundamentales para optimizar modelos de Deep Learning: el Aumento de Datos (Data Augmentation) para mejorar la robustez y el Aprendizaje por Transferencia (Transfer Learning) para maximizar la eficiencia
 
-## Objetivo
+Objetivo
 Implementar técnicas para mejorar el desempeño y la generalización de modelos:
 
-El Data Augmentation permite aumentar artificialmente la cantidad y diversidad de datos.
+El Data Augmentation permite artificialmente la cantidad y diversidad de datos.
 El Transfer Learning permite reutilizar modelos preentrenados para resolver problemas con mayor eficiencia
+Conjunto de datos
+Conjunto de datos: CIFAR-10, compuesto por 60.000 imágenes a color distribuidas en 10 clases de objetos (32x32 píxeles).
+Resolución: 32x32 píxeles.
+Preprocesamiento: Normalización inicial al rango [0, 1] y validación cruzada mediante una división estricta de entrenamiento (50k) y prueba (10k).
+Implementación Técnica
+Modelo Base (Baseline): Arquitectura CNN simple de una capa Conv2D (32 filtros) entrenada desde cero con datos estáticos para establecer el rendimiento de control.
 
-# Dataset
-*  Dataset: CIFAR-10,  Compuesto por 60,000 imágenes a color distribuidas en 10 clases de objetos (32x32 píxeles).
-*  Resolución: 32x32 píxeles.
-*  Preprocesamiento:Normalización de valores de píxeles al rango **[0, 1]** y aplicación de transformaciones aleatorias en     tiempo de ejecución.
-  
-## Implementación Técnica
+Modelo con Data Augmentation: Inserción de un bloque secuencial de transformaciones aleatorias (Volteo horizontal, Rotación 10%, Zoom 10% y Traslación 10%) activo exclusivamente durante el flujo de entrenamiento.
 
-### 1. Técnica de Data Augmentation
-*   **Transformaciones:**  Rotación aleatoria (10%), zoom (10%), traslación horizontal/vertical y volteo horizontal. 
-*   **Propósito:** Mitigar el overfitting al evitar que la red memorice imágenes específicas, obligándola a reconocer patrones generales del objeto.
+Transfer Learning (MobileNetV2): Reutilización del extractor de características preentrenado en ImageNet. Se integró una capa de upsampling a 96x96 píxeles para satisfacer los requisitos de la arquitectura, congelando la base convolucional (entrenable = False) y entrenando únicamente el cabezal de clasificación densa.
 
-### 2. Implementación de Transfer Learning (MobileNetV2)
-Se reutilizó la arquitectura MobileNetV2, destacada por su eficiencia en dispositivos con recursos limitados.
+Resultados Principales
+Al finalizar el entrenamiento, el resumen final de métricas en el conjunto de validación muestra el siguiente comportamiento:
 
-*   **Modelo Base:** MobileNetV2 preentrenado con el dataset ImageNet.
-*   **Técnica:** Congelación de capas base (trainable = False) para conservar la extracción de características genéricas y entrenamiento exclusivo de una nueva         cabeza clasificadora (GlobalAveragePooling2D + Dense).
+Modelo Base (Val Accuracy: 64.16% | Val Loss: 1.0494): Consigue una convergencia rápida y un desempeño intermedio. Sin embargo, muestra una tendencia al estancamiento debido a la naturaleza estática de los datos de entrada.
 
-## Resultados Principales
-Tras un entrenamiento de 10 épocas, se extrajeron las siguientes observaciones:
+Modelo con Data Augmentation (Val Accuracy: 56.07% | Val Loss: 1.2948): Registró el rendimiento numérico más bajo en la ventana analizada. Las constantes transformaciones geométricas actuaron como una fuerte penalización de regularización, dificultando la convergencia del optimizador en un límite corto de 10 épocas. Requiere un presupuesto mayor de iteraciones para estabilizar su costo y superar la línea base.
 
-*   **Modelo Base vs. Aumentado:**  El modelo con Data Augmentation muestra una curva de aprendizaje más orgánica. Aunque su precisión inicial es menor (~55% en validación), demuestra una capacidad de generalización superior al reducir el sobreajuste (overfitting) que presentaba el modelo base, el cual tendía a memorizar el ruido del dataset.
+Modelo Transfer Learning (Val Accuracy: 85.15% | Val Loss: 0.4347): Dominó de forma absoluta todos los escenarios desde la primera época (78.96% de precisión inicial). La capa de reescalado a 96x96 evitó el colapso espacial de la información, permitiendo que los filtros abstractos preentrenados clasificaran las imágenes con una eficiencia computacional masiva y nulo sobreajuste.
 
-*   **Impacto de Transfer Learning:** El uso de pesos preentrenados permitió alcanzar una estabilidad inmediata en la pérdida (loss), pero con una precisión limitada (~32%). Esta diferencia respecto a los modelos anteriores se debe a que MobileNetV2 está optimizado para imágenes de 224x224; al trabajar con la resolución nativa de CIFAR-10 (32x32), se produce una pérdida significativa de información espacial en las capas iniciales del modelo.
+Conclusiones Técnicas
+Eficacia del Aprendizaje por Transferencia: Se consolidó como la técnica más competitiva y eficiente, demostrando que la reutilización de pesos de ImageNet es notablemente superior al entrenamiento desde cero en imágenes complejas, siempre que se mitiga la restricción dimensional mediante técnicas de upsampling.
 
-##  Conclusiones Técnicas
-*   **Eficacia del Aumento de Datos:** Se confirma como la mejor estrategia para este dataset, logrando un balance óptimo entre precisión y robustez.
+Límites de la Regularización: El aumento de datos reduce el rendimiento a corto plazo al destruir los patrones estáticos que un optimizador básico asimila rápido. Su uso es obligatorio para robustez a largo plazo, pero ineficiente en ventanas de entrenamiento reducidas.
 
-*   **Limitaciones del Transfer Learning:** Aunque es eficiente en tiempo, la arquitectura MobileNetV2 requiere un reescalado de imágenes (upsampling) para ser competitiva en datasets de baja resolución como CIFAR-10.
-
-*   **Generalización:** El modelo aumentado es el más confiable para entornos reales, ya que aprendió características invariantes a la rotación y traslación.
-
-
- ## Estructura del repositorio
-
-```
+Estructura del repositorio
 Week9/
-├── Actividad_9_Data_Augmentation.ipynb
-├── Actividad_9_Transfer_Learning.ipynb
+├── Actividad_9_Técnicas_de_Data_Augmentation_y_Transfer_Learning_en_imagenes.ipynb
 └── README.md
-```
-##  Cómo ejecutar
-1.  Descarga el archivo .ipynb de este repositorio.
-2.  Ábrelo en Google Colab.
-3.  Ejecuta las celdas en orden: Entorno de Ejecución > Ejecutar todas.
+Cómo ejecutar
+Descargue el archivo .ipynb de este repositorio.
+Ábrelo en Google Colab.
+Ejecuta las celdas en orden: Entorno de Ejecución > Ejecutar todas.
 
 
