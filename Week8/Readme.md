@@ -1,3 +1,11 @@
+# ACTIVIDAD PRESENTADA POR 
+
+PAOLA NAVENGAS -
+JOHAN AVILA -
+DEISY MURCIA -
+RUMI TORRES-
+----
+
 # Actividad 8: Implementación de un Modelo Popular de CNN en TensorFlow + Keras y/o PyTorch en Google Colab
 
 Este proyecto presenta una comparativa entre dos estrategias de Deep Learning para la clasificación de imágenes: una arquitectura **CNN personalizada** y una aproximación mediante **Transfer Learning**.
