@@ -1,3 +1,10 @@
+# ACTIVIDAD PRESENTADA POR 
+
+PAOLA NAVENGAS 
+JOHAN AVILA 
+DEISY MURCIA 
+RUMI TORRES
+
 # Actividad 9: Implementación de Data Augmentation y Transfer Learning en Imágenes
 
 Este proyecto presenta dos estrategias fundamentales para optimizar modelos de Deep Learning: el Aumento de Datos (Data Augmentation) para mejorar la robustez y el Aprendizaje por Transferencia (Transfer Learning) para maximizar la eficiencia
