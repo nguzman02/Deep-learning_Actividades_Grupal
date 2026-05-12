@@ -1,3 +1,10 @@
+# ACTIVIDAD PRESENTADA POR 
+
+PAOLA NAVENGAS 
+JOHAN AVILA 
+DEISY MURCIA 
+RUMI TORRES
+----
 # Semana 12 – Actividad 12: Implementación del Mecanismo de Atención para Series de Tiempo y un Transformer Básico en Google Colab 
 ---
 # 1. Descripción de la actividad
