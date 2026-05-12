@@ -1,9 +1,9 @@
 # ACTIVIDAD PRESENTADA POR 
 
-PAOLA NAVENGAS 
-JOHAN AVILA 
-DEISY MURCIA 
-RUMI TORRES
+PAOLA NAVENGAS -
+JOHAN AVILA -
+DEISY MURCIA -
+RUMI TORRES-
 
 # Semana 11 – Actividad 11: Implementación de una Red Neuronal Recurrente (RNN) para la Predicción de Series de Tiempo en Google Colab 
 
