@@ -1,3 +1,10 @@
+# ACTIVIDAD PRESENTADA POR 
+
+PAOLA NAVENGAS 
+JOHAN AVILA 
+DEISY MURCIA 
+RUMI TORRES
+
 # Actividad 10: Redes neuronales siamesas - Reconocimiento facial
 
 Este proyecto permite la comparación de dos imagenes (rostros) para determinar si se trata de la misma persona o es diferente. Para esto, se ha entrenado una red neuronal siamesa para realizar reconocimiento facial.
