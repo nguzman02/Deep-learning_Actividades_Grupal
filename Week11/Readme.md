@@ -1,9 +1,16 @@
-Semana 11 – Actividad 11: Implementación de una Red Neuronal Recurrente (RNN) para la Predicción de Series de Tiempo en Google Colab 
+# ACTIVIDAD PRESENTADA POR 
 
-1. Descripción de la actividad
+PAOLA NAVENGAS 
+JOHAN AVILA 
+DEISY MURCIA 
+RUMI TORRES
+
+# Semana 11 – Actividad 11: Implementación de una Red Neuronal Recurrente (RNN) para la Predicción de Series de Tiempo en Google Colab 
+
+# 1. Descripción de la actividad
 En esta actividad se desarrollo e implementación de una red neuronal recurrente (RNN) aplicada a la predicción de series de tiempo, con el propósito de analizar cómo los modelos de aprendizaje profundo pueden capturar dependencias temporales en los datos. A partir de un conjunto de datos secuencial, se aborda el proceso completo que incluye la preparación de la información, la construcción de secuencias temporales y el entrenamiento del modelo La actividad se desarrolla en Google Colab y se presenta como evidencia reproducible en GitHub.
 
-2. Objetivo de la actividad
+# 2. Objetivo de la actividad
 Comprender cómo los modelos recurrentes permiten capturar dependencias temporales en los datos, utilizando información pasada para predecir valores futuros
 
 
