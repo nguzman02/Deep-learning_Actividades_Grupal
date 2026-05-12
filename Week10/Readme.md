@@ -1,9 +1,9 @@
 # ACTIVIDAD PRESENTADA POR 
 
-PAOLA NAVENGAS 
-JOHAN AVILA 
-DEISY MURCIA 
-RUMI TORRES
+PAOLA NAVENGAS -
+JOHAN AVILA -
+DEISY MURCIA -
+RUMI TORRES-
 
 # Actividad 10: Redes neuronales siamesas - Reconocimiento facial
 
