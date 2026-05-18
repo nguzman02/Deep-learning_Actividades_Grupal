@@ -34,8 +34,67 @@ La actividad busca evidenciar la capacidad de diseñar y entrenar una arquitectu
 - Comentarios y conclusiones dentro del notebook
 10. La entrega debe realizarse en formato PDF con enlace funcional al notebook de Google Colab o mediante archivo .ipynb correctamente organizado.
 
+
+## El objetivo es que el modelo aprenda a:
+- Comprimir imágenes (encoder)
+- Reconstruir imágenes limpias a partir de imágenes con ruido (decoder)
+
 ---
-# 1. Conclusiones técnicas breves (para pegar en Markdown)
+
+## Objetivos
+- Comprender el aprendizaje no supervisado
+- Diseñar arquitectura encoder–decoder
+- Aplicar ruido artificial a imágenes
+- Evaluar la calidad de reconstrucción
+
+---
+
+## Dataset
+Se utilizó el dataset **MNIST**, que contiene:
+- 60,000 imágenes de entrenamiento  
+- 10,000 imágenes de prueba  
+- Imágenes en escala de grises de tamaño 28x28 píxeles  
+
+---
+
+## Metodología
+
+### 1. Preparación de datos
+- Normalización de imágenes (0–1)
+- Transformación a formato (28,28,1)
+
+### 2. Generación de ruido
+Se aplica ruido gaussiano a las imágenes para simular datos corruptos.
+
+### 3. Modelo Autoencoder
+Se implementa un modelo CNN con:
+- Encoder: Conv2D + MaxPooling  
+- Decoder: Conv2DTranspose  
+
+### 4. Entrenamiento
+- Entrada: imágenes con ruido  
+- Salida esperada: imágenes originales  
+
+---
+
+## Resultados
+
+### Comparación de imágenes
+Se analizan tres tipos de imágenes:
+- Imagen original  
+- Imagen con ruido  
+- Imagen reconstruida  
+
+El modelo logra eliminar gran parte del ruido y recuperar la estructura del dígito.
+
+---
+
+## Evaluación
+- Métrica utilizada: Loss (binary crossentropy)
+- Se observa reducción progresiva del error durante el entrenamiento
+
+---
+## Conclusiones técnicas breves (para pegar en Markdown)
 Pega esto en una celda Markdown y ajústalo a lo que observes en tus gráficas:
 Conclusiones técnicas:
 
@@ -57,7 +116,7 @@ Detección de anomalías: si el autoencoder aprende “lo normal”, fallará al
 
 
 ---------------
-0 Estructura del repositorio
+## Estructura del repositorio
 Week12/
 ├── week12_Actividad12.ipynb └── README.md
 
