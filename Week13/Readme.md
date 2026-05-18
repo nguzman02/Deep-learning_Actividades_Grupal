@@ -54,3 +54,15 @@ Las diferencias típicas aparecen en zonas de detalle fino (píxeles débiles), 
 Reducción de ruido en imágenes médicas (rayos X, resonancias), digitalización de documentos o cámaras en baja luz.
 Compresión y representación latente para almacenamiento eficiente.
 Detección de anomalías: si el autoencoder aprende “lo normal”, fallará al reconstruir patrones raros; ese error puede usarse como señal de anomalía. (Este uso se menciona como ejemplo típico en tutoriales introductorios de autoencoders).
+
+
+---------------
+0 Estructura del repositorio
+Week12/
+├── week12_Actividad12.ipynb └── README.md
+
+Cómo ejecutar el notebook
+
+Abrir Google Colab
+Ejecutar las celdas en orden -> Entorno de Ejecución --> Ejecutar todas
+Las gráficas de comparación y la matriz de confusión se generarán automáticamente al final.
