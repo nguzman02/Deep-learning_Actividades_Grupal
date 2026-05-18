@@ -5,9 +5,9 @@
 * JOHAN AVILA 
 * DEISY MURCIA
 * RUMI TORRES
-
+  
+---
 ## Actividad 13: Implementación de un Autoencoder en una Red Denoising usando el dataset MNIST en Google
-
 
 En esta actividad, las y los creadores de oportunidades implementarán un modelo básico de Autoencoder Denoising utilizando el dataset MNIST en un entorno de práctica guiada (Google Colab). El propósito es comprender cómo las redes neuronales pueden aprender representaciones comprimidas de los datos y reconstruir imágenes afectadas por ruido, fortaleciendo así conceptos relacionados con aprendizaje no supervisado y redes generativas.
 
@@ -33,7 +33,6 @@ La actividad busca evidenciar la capacidad de diseñar y entrenar una arquitectu
 - Resultados visibles del entrenamiento y reconstrucción
 - Comentarios y conclusiones dentro del notebook
 10. La entrega debe realizarse en formato PDF con enlace funcional al notebook de Google Colab o mediante archivo .ipynb correctamente organizado.
-
 
 ## El objetivo es que el modelo aprenda a:
 - Comprimir imágenes (encoder)
@@ -113,7 +112,6 @@ Las diferencias típicas aparecen en zonas de detalle fino (píxeles débiles), 
 Reducción de ruido en imágenes médicas (rayos X, resonancias), digitalización de documentos o cámaras en baja luz.
 Compresión y representación latente para almacenamiento eficiente.
 Detección de anomalías: si el autoencoder aprende “lo normal”, fallará al reconstruir patrones raros; ese error puede usarse como señal de anomalía. (Este uso se menciona como ejemplo típico en tutoriales introductorios de autoencoders).
-
 
 ---------------
 ## Estructura del repositorio
